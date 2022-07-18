@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./index.css">
+        <title>Forms</title>
+    </head>
+
+    <body>
+        <form action="/" method="GET">
+            <section>
+                <h2>Your Personal Information</h2>
+                <ul>
+                    <li>
+                        <label for="user-name">Your Name</label>
+                        <input type="text" id="user-name" name="user-name" />
+                    </li>
+                    <li>
+                        <label for="user-email">Your Email Address</label>
+                        <input type="email" name="user-email" id="user-email">
+                    </li>
+                    <li>
+                        <label for="user-pswd">Your Password</label>
+                        <input type="password" id="user-pswd" name="user-pswd">
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h2>Your Additional Information</h2>
+                <ul>
+                    <li>
+                        <label for="user-age">Your Age</label>
+                        <input type="number" name="user-age" id="user-age" min="1">
+                    </li>
+                    <li>
+                        <label for="user-dob">Your DOB</label>
+                        <input type="date" id="user-dob" name="user-dob">
+                    </li>
+                    <li>
+                        <label for="color">Fav Color</label>
+                        <select name="color" name="color" id="color">
+                            <option value="select" disabled selected>Select</option>
+                            <option value="black">Black</option>
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                        </select>
+                    </li>
+                    <section>
+                        <label for="user-msg">Your Message</label>
+                        <textarea name="user-msg" id="user-mag" cols="50" rows="10"></textarea>
+                    </section>
+                </ul>
+            </section>
+            <section>
+                <h2>Account Verification</h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="radio" id="user-msg" name="user-choice" value="message">
+                        <label for="user-msg">Message</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" id="user-phone" name="user-choice" value="phone">
+                        <label for="user-phone">Phone</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" id="user-email" name="user-choice" value="email">
+                        <label for="user-email">Email</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="checkbox" id="contact-phone" name="contact" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="checkbox" id="contact-msg" value="msg">
+                        <label for="contact-msg">Message</label>
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <h2>Terms and conditions</h2>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="agree-terms" name="terms">
+                    <label for="agree-terms">Terms Of Agreement</label>
+                </div>
+                <div class="form-control-inline">
+                    <input type="checkbox" id="steal-data" name="warning">
+                    <label for="steal-data">We will steal your data</label>
+                </div>
+            </section>
+            <section>
+                <button type="clear">Reset</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </body>
+
+</html>
